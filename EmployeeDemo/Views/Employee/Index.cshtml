@@ -1,0 +1,27 @@
+﻿@model List<EmployeeDemo.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Employee Details </h2>
+
+@foreach(var item in Model)
+{
+    <table border="1">
+        <tr>
+            <td> Name : <td>@item.EmpName </td></td>
+        </tr>
+        <tr>
+            <td> id : <td>@item.EmpId </td></td>
+        </tr>
+        <tr>
+            <td> Email :<td> @item.Emp_Email </td></td>
+        </tr>
+        <tr>
+            <td> Gender :<td> @item.Gender </td></td>
+        </tr>
+        <tr>
+            <td> City :<td> @item.Emp_City </td></td>
+        </tr>
+    </table>
+}
